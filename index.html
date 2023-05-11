@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="h-screen w-screen flex justify-center items-center bg-slate-950">
+    <div class="main_container h-auto w-96 p-8 rounded-2xl bg-gray-800">
+      <div class="stardiv h-12 w-12 bg-gray-700 flex justify-center items-center rounded-full mb-4"><img src="./images/icon-star.svg" alt="star_img"></div>
+      <h3 class="text-white font-semibold text-2xl mb-4">How did we do?</h3>
+      <p class="text-gray-400 mb-4"> Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!
+      </p>
+      <div class="five_circles my-8 flex justify-between text-gray-400 font-semibold">
+        <button class="circle h-12 w-12 bg-gray-700 flex justify-center items-center rounded-full hover:bg-gray-500 hover:text-white active:bg-orange-500 focus:bg-gray-500 focus:text-white">1</button>
+        <button class="circle h-12 w-12 bg-gray-700 flex justify-center items-center rounded-full hover:bg-gray-500 hover:text-white active:bg-orange-500 focus:bg-gray-500 focus:text-white">2</button>
+        <button class="circle h-12 w-12 bg-gray-700 flex justify-center items-center rounded-full hover:bg-gray-500 hover:text-white active:bg-orange-500 focus:bg-gray-500 focus:text-white">3</button>
+        <button class="circle h-12 w-12 bg-gray-700 flex justify-center items-center rounded-full hover:bg-gray-500 hover:text-white active:bg-orange-500 focus:bg-gray-500 focus:text-white">4</button>
+        <button class="circle h-12 w-12 bg-gray-700 flex justify-center items-center rounded-full hover:bg-gray-500 hover:text-white active:bg-orange-500 focus:bg-gray-500 focus:text-white">5</button>
+      </div>
+      <button class="btn w-full h-12 rounded-3xl bg-orange-500 text-white font-bold tracking-widest hover:bg-orange-400 active:bg-white active:text-orange-500 transition-all" id="submit_button">SUBMIT</button>
+    </div>
+
+    <div class="thankyou_container hidden h-auto w-96 p-8 rounded-2xl bg-gray-800 text-center">
+      <img class="mx-auto mb-8" src="./images/illustration-thank-you.svg" alt="">
+      <div class="you_selected w-3/5 mx-auto mb-8 py-1 rounded-2xl bg-gray-700 text-orange-500">You selected <span id="rating"></span> out of 5</div>
+      <h2 class="text-white font-bold text-2xl mb-4">Thank you!</h2>
+      <p class="text-gray-400 mb-4">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+      <button class="btn w-full h-12 rounded-3xl bg-orange-500 text-white font-bold tracking-widest hover:bg-orange-400 active:bg-white active:text-orange-500 transition-all" id="rateAgain_button">RATE AGAIN</button>
+    </div>
+  </main>
+
+
+  
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/PARKO001">PARKO</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
